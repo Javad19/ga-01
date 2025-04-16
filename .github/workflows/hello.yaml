@@ -1,0 +1,24 @@
+name: hello-workflow
+
+on:
+  push:
+    branches:
+      - main
+
+
+jobs:
+    hello:
+        runs-on: ubuntu-latest
+        steps:
+        - name: Checkout code
+          run:
+            echo "hello world"
+            echo "Hello, World!"
+            echo "This is a GitHub Actions workflow."
+            echo "It runs on every push to the main branch."
+        - name: goodbye
+          run: |
+            echo "goodbye world"
+            echo "Goodbye, World!"
+            echo "This is a GitHub Actions workflow."
+            echo "It runs on every push to the main branch."
